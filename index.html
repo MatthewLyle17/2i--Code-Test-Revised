@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="display"></p>
+
+<script>
+//declare array variable
+var list = [];
+
+//create function to loop random number generator
+function createRandList(){
+for (var i = 0; i < 10; i +=1){
+
+    //generate random number
+  random = Math.floor(Math.random() * 100) + 1;
+  //add random number to array 
+  list.push(random);
+}
+  return list;
+}
+  //display array
+document.getElementById("display").innerHTML = createRandList();
+
+</script>
+
+</body>
+</html>
